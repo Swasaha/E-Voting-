@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Head Voting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Vote for Your Student Head</h1>
+        <p>Click on the candidate's name to vote.</p>
+        
+        <div class="candidates">
+            <div class="candidate">
+                <img src="girl.png" alt="Swasthika">
+                <h2>Swasthika</h2>
+                <button onclick="vote('Swasthika')">Vote</button>
+            </div>
+
+            <div class="candidate">
+                <img src="boy.png" alt="Khushal">
+                <h2>Khushal</h2>
+                <button onclick="vote('Khushal')">Vote</button>
+            </div>
+        </div>
+
+        <h2>Live Voting Results</h2>
+        <div id="results"></div>
+
+        <button class="reset-btn" onclick="resetVotes()">Reset Votes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
